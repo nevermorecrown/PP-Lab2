@@ -5,7 +5,7 @@
 
 int main(int argc, char **argv) {
     size_t element_count = 100000000u;
-    printf("==========CPP REALIZATION========\n");
+    printf("==========CPP========\n");
     printf("Control: %f\n", log(2));
     printf("==False sharing==\n");
     run_experiments_for(element_count, cpp_accumulate_false_sharing);
@@ -17,7 +17,7 @@ int main(int argc, char **argv) {
     run_experiments_for(element_count, cpp_accumulate_mutex);
     printf("==Reduction (static)==\n");
     run_experiments_for(element_count, cpp_accumulate_reduction_static);
-    printf("==========OMP REALIZATION========\n");
+    printf("==========OMP========\n");
     printf("==False sharing==\n");
     run_experiments_for(element_count, omp_accumulate_false_sharing);
     printf("==Alignment==\n");
