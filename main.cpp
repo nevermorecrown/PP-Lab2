@@ -4,7 +4,7 @@
 #include <math.h>
 
 int main(int argc, char **argv) {
-    size_t element_count = 100000000u;
+    size_t element_count = 1000u;
     printf("==========CPP========\n");
     printf("Control: %f\n", log(2));
     printf("==False sharing==\n");
